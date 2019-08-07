@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <title>Cadastro</title>
+        <meta charset="utf-8">
+    </head>
+    <body>
+        <h1>Cadastro de Usúario</h1>
+        <hr>
+        <!--Container-->
+        <form name="form_cadastro_usuario" action="salvar-usuario.html" method="POST">
+            
+            <fieldset>
+                <legend><strong>Informações Pessoais</strong></legend>
+                <label for="nome">Nome: </label> <input id="nome" name="nome">
+                <label for="sobrenome">Sobrenome</label> <input id="sobrenome" name="sobrenome"> <br>
+                <label for="email">E-mail</label> <input id="email" name="email" type="email"> <br>
+            </fieldset>
+            <br>            
+            <fieldset>
+                <legend><strong>Informações de Usuário</strong></legend>
+                <label for="nome_de_usuario">Nome de Usuario</label> <input id="nome_de_usuario" name="nome_de_usuario" required> <br>
+                <label for="senha">Senha</label> <input id="senha" name="senha" type="password" required>
+                <label for="confirmacao_de_senha">Confirmação De Senha</label> <input id="confirmacao_de_senha" name="confirmacao_de_senha" required> <br>
+                <label for="dica_de_senha">Dica de Senha</label> <input id="dica_de_senha" name="dica_de_senha">
+            </fieldset>
+            <br>
+            <fieldset>   
+                <legend><strong>Redes Sociais</strong></legend>
+                <img src="linkedin.png"><label for="linkedin"><i>Linkedin.com.br</i></label> <input id="linkedin" name="linkedin"> <br>
+                <img src="face.png"><label for="facebook"><i>Facebook.com</i></label> <input id="facebook" name="facebook"> <br>
+                <img src="insta.png"><label for="insta"><i>Instagram.com</i></label> <input id="insta" name="insta"> <br>
+            </fieldset>
+            <fieldset>
+                <legend><strong>Contrato</strong>></legend>
+                Aceita os termos do contrat?
+                <br>
+                <input type="radio" name="contrato">Sim
+                &nbsp; &nbsp;
+                <input type="radio" name="contrato">Não <br>
+                <br>
+                Aceita esse outro contrato?
+                <select name="contrato2">
+                    <option></option>
+                    <option>Sim</option>
+                    <option>Com Certeza</option>
+                </select>
+             </fieldset>            
+            <button>Salvar <a href="salvar-usuario.html"></a></button>
+            <a href="inicial.html">Voltar</a>
+            
+        </form>
+        
+
+            <footer>
+                    <em>&copy; 2019 - Lucas Sistemas</em>
+            </footer>  
+            
+            <hr>
+
+        
+    </body>
+</html>
